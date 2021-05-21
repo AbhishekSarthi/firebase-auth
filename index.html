@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>HEllo</h1>
+        <button id="signup">SignUp</button>
+        <button id="logout">logout</button>
+        <button id="login">login</button>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script> -->
+
+        <script>
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+                apiKey: 'AIzaSyBtrL7Rw28QFJ6skKAXoHRc38DS9N-cLAk',
+                authDomain: 'testing-9755c.firebaseapp.com',
+                projectId: 'testing-9755c',
+                storageBucket: 'testing-9755c.appspot.com',
+                messagingSenderId: '354708519313',
+                appId: '1:354708519313:web:2c7e3a9d22857dc77bc230',
+                // measurementId: 'G-MJYCTT96LZ',
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+            // console.log(auth, db);
+        </script>
+        <script src="./scripts/auth.js"></script>
+    </body>
+</html>
